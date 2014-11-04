@@ -1,0 +1,13 @@
+<!ELEMENT bookstore (book*)>
+<!ELEMENT book (title, author+, year, price)>
+<!ATTLIST book
+category CDATA #REQUIRED
+cover (hardback|paperback) #IMPLIED
+>
+<!ELEMENT title (#PCDATA)>
+<!ATTLIST title
+lang CDATA "en"
+>
+<!ELEMENT author (#PCDATA)>
+<!ELEMENT year (#PCDATA)>
+<!ELEMENT price (#PCDATA)>
